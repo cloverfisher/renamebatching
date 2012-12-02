@@ -1,0 +1,9 @@
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\bin\Debug\RenameBatching.exe.config
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\bin\Debug\RenameBatching.exe
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\bin\Debug\RenameBatching.pdb
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\obj\Debug\RenameBatching.Form1.resources
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\obj\Debug\RenameBatching.Properties.Resources.resources
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\obj\Debug\RenameBatching.csproj.GenerateResource.Cache
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\obj\Debug\RenameBatching.exe
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\obj\Debug\RenameBatching.pdb
+E:\MyProject\RenameBatching\RenameBatching\RenameBatching\obj\Debug\RenameBatching.csprojResolveAssemblyReference.cache
