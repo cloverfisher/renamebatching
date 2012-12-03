@@ -1,0 +1,7 @@
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\bin\Debug\UnitTestProject2.dll
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\bin\Debug\UnitTestProject2.pdb
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\bin\Debug\RenameBatching.exe
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\bin\Debug\RenameBatching.pdb
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\obj\Debug\UnitTestProject2.csprojResolveAssemblyReference.cache
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\obj\Debug\UnitTestProject2.dll
+E:\MyProject\RenameBatching\RenameBatching\UnitTestProject2\obj\Debug\UnitTestProject2.pdb

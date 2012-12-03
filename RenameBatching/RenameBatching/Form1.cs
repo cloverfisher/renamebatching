@@ -22,6 +22,11 @@ namespace RenameBatching
         public Form1()
         {
             InitializeComponent();
+            textBoxExpand.Text = "";
+            textBox1.Text = "";
+            textBoxPostfix.Text = "";
+            textBoxPrefix.Text = "";
+            numBox.Text = "";
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -29,7 +34,7 @@ namespace RenameBatching
 
         }
 
-        private void FolderButton_Click(object sender, EventArgs e)
+        private void buttonFolder_Click(object sender, EventArgs e)
         {
             Stream myStream = null;
             String[] line;
@@ -71,9 +76,24 @@ namespace RenameBatching
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonSave_Click(object sender, EventArgs e)
         {
-            mainfunction.reName(folder1,folder2);
+            if (mainfunction.wheSave(folder1, folder2, numBox.Text, textBox1.Text, ExtensionBox.Text))
+            {
+                mainfunction.reName(folder1, folder2);
+                mainfunction.openFolder(folder1.getpath());
+                
+            }
+
+        }
+
+        private void buttonUndo_Click(object sender, EventArgs e)
+        {
+            if (mainfunction.wheSave(folder1, folder2, numBox.Text, textBox1.Text, ExtensionBox.Text))
+            {
+                mainfunction.reName(folder2, folder1);
+            //    mainfunction.openFolder(folder1.getpath());
+            }
         }
 
 
@@ -85,9 +105,13 @@ namespace RenameBatching
 
         private void renameButton_Click(object sender, EventArgs e)
         {
+            if (mainfunction.wheRename(folder1, numBox.Text, textBox1.Text, ExtensionBox.Text))
+            {
+                folder2 = mainfunction.creatNewFolder(folder1, numBox.Text, textBox1.Text, ExtensionBox.Text,textBoxPrefix.Text,textBoxPostfix.Text);
+                listview(folder2, listView2);         
+            }
      //       File.Move("D:\\test\\a.txt", "D:\\test\\a2.txt");
-            folder2 = mainfunction.creatNewFolder(folder1, Convert.ToInt32(numBox.Text), textBox1.Text, ExtensionBox.Text);
-            listview(folder2, listView2);
+
             
         }
 
@@ -113,9 +137,28 @@ namespace RenameBatching
             //  return alistview;
         }
 
-        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
-        {
 
+
+        private void numBox_KeyPress(object sender, System.Windows.Forms.KeyPressEventArgs e)  
+        {  
+            if(e.KeyChar!='\b')//这是允许输入退格键  
+            {  
+                if((e.KeyChar<'0')||(e.KeyChar>'9'))//这是允许输入0-9数字  
+                {  
+                 e.Handled = true;  
+                }  
+            }  
         }
+
+
+
+
+
+
+
+        //private void numBox_TextChanged(object sender, EventArgs e)
+        //{
+
+        //}
     }
 }
